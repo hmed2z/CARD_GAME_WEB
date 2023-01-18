@@ -1,0 +1,176 @@
+body {
+  background-color: green;
+  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+select {
+  width: 348px;
+  height: 40px;
+  margin-left: 85px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 10px;
+  outline: none;
+}
+
+.container {
+  max-width: 100%;
+  position: relative;
+}
+
+.Connect {
+  position: relative;
+  top: 40px;
+}
+
+.membership {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #222;
+  padding: 20px;
+}
+
+#OR {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
+fieldset {
+  line-height: 2em;
+  width: 100%;
+  margin: autoauto;
+}
+
+legend {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
+button {
+  border-radius: 10px;
+  text-align: center;
+  color: green;
+  margin: auto 20px;
+  padding: 5px 10px;
+}
+
+.flexing {
+  width: 120px;
+  margin: 10px auto;
+}
+
+label {
+  line-height: 1.5em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 10px 10px 10px 0px;
+}
+
+input {
+  border-radius: 10px;
+  padding: 2px;
+  width: 80%;
+  outline: none;
+}
+
+input[type="Email"] {
+  position: relative;
+  left: 6%;
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: green;
+    font-size: 16px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  body {
+    background-color: green;
+    font-size: 16px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-color: green;
+    font-size: 16px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  fieldset {
+    position: relative;
+    left: 15%;
+    line-height: 2em;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    background-color: green;
+    font-size: 16px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+}
+
+@media (max-width: 479px) {
+  body {
+    background-color: green;
+    font-size: 16px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  fieldset {
+    position: relative;
+    left: 8%;
+    line-height: 2em;
+  }
+
+  #connect {
+    position: relative;
+    left: 18%;
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    background-color: green;
+    font-size: 16px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  fieldset {
+    position: relative;
+    left: 6%;
+    line-height: 2em;
+  }
+
+  #connect {
+    position: relative;
+    left: 18%;
+  }
+
+  form {
+    position: relative;
+    top: 100px;
+    margin-top: 10px;
+    height: 650px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

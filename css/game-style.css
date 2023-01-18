@@ -1,0 +1,301 @@
+:root {
+  --blue: blue;
+}
+
+#container {
+  background-color: green;
+  width: 1000px;
+  height: 500px;
+  margin: auto auto 50px;
+  display: grid;
+  grid-template-rows: 250px 250px;
+  grid-template-columns: 200px 600px 200px;
+  grid-template-areas:
+    "player2 court-fold player1"
+    "player2 chat player1";
+}
+
+#player1 {
+  grid-area: player1;
+}
+
+#player2 {
+  grid-area: player2;
+}
+
+#court-fold {
+  grid-area: court-fold;
+  position: relative;
+}
+
+#chat {
+  grid-area: chat;
+}
+
+img {
+  width: 60px;
+  height: auto;
+  transform: rotate(-90deg);
+  display: block;
+  margin: auto;
+  margin-top: -45px;
+}
+
+img:first {
+  margin-bottom: 0;
+}
+
+.display {
+  width: 100px;
+  height: 100px;
+  padding: 100px 0;
+  margin: auto;
+}
+
+.scroll {
+  width: 100px;
+  height: 200px;
+  padding: 100px 0;
+  margin: 50px auto;
+  overflow: scroll;
+}
+
+.chat-room {
+  height: 225px;
+  width: 500px;
+  margin: auto;
+  background-color: wheat;
+}
+
+#center {
+  width: 150px;
+  height: 150px;
+  margin: 50px auto auto;
+}
+
+#position {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: lightgreen;
+}
+
+#position img {
+  position: absolute;
+  display: inline;
+  margin: 0;
+  margin-left: 15px;
+}
+
+#position img:nth-child(1) {
+  bottom: 15px;
+  left: 35px;
+}
+
+#position img:nth-child(2) {
+  bottom: 50px;
+  left: 20px;
+}
+
+nav {
+  max-width: 300px;
+  margin: 5px auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+}
+
+button {
+  border-radius: 10px;
+  text-align: center;
+  color: green;
+  margin: auto 20px;
+  padding: 5px 10px;
+}
+
+/*chat*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 20px auto;
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+form label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#wrapper {
+  margin: 0 auto;
+  padding: 1%;
+  background: #eee;
+  width: 80%;
+  max-width: 100%;
+  border: 2px solid #212121;
+  border-radius: 4px;
+}
+
+#chatbox {
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 2.5%px;
+  background: #fff;
+  height: 80%;
+  width: 100%;
+  border: 1px solid #a7a7a7;
+  overflow: auto;
+  border-radius: 4px;
+  border-bottom: 4px solid #a7a7a7;
+}
+
+#usermsg {
+  flex: 1;
+  border-radius: 4px;
+  border: 1px solid #ff9800;
+}
+
+#submitmsg {
+  background: #ff9800;
+  border: 2px solid #e65100;
+  color: white;
+  padding: 4px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.error {
+  color: #ff0000;
+}
+
+.msgln {
+  margin: 0 0 5px 0;
+}
+
+.msgln span.left-info {
+  color: orangered;
+}
+
+.msgln span.chat-time {
+  color: #666;
+  font-size: 60%;
+  vertical-align: super;
+}
+
+.msgln b.user-name,
+.msgln b.user-name-left {
+  font-weight: bold;
+  background: #546e7a;
+  color: white;
+  padding: 2px 4px;
+  font-size: 90%;
+  border-radius: 4px;
+  margin: 0 5px 0 0;
+}
+
+.msgln b.user-name-left {
+  background: orangered;
+}
+
+#deckdiv {
+  width: 100px;
+  height: 100px;
+  background-color: bisque;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#opponent {
+  width: 150px;
+  height: 70px;
+  background-color: bisque;
+  position: absolute;
+  text-align: center;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+#me {
+  width: 150px;
+  height: 70px;
+  background-color: bisque;
+  position: absolute;
+  text-align: center;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+#rotation {
+  width: 150px;
+  height: auto;
+  background-color: bisque;
+  position: absolute;
+  text-align: center;
+  left: 200px;
+  top: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.drag-over {
+  border: dashed 3px red;
+}
+
+#deck {
+  position: relative;
+  width: 100%;
+  flex: 1 0 80%;
+}
+
+#deck img {
+  position: absolute;
+  left: 20px;
+  bottom: -20px;
+}
+
+#myscore {
+  position: relative;
+  width: 100%;
+  flex: 1 0 80%;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+#yourscore {
+  position: relative;
+  width: 100%;
+  flex: 1 0 80%;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bolder;
+}
