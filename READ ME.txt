@@ -1,0 +1,36 @@
+****** READ ME ******
+
+PROJET WEB BY AHMED BAAROUN & HILMI CELAYIR
+
+- Lancer tout d'abord un serveur Apache et un serveur MySQL (Nous avons utilisé un serveur XAMPP mêlant les deux serveurs)
+
+- Accéder au shell du serveur (XAMPP pour notre part)
+
+- Se connecter à MySQL avec la commande : " mysql -uroot "
+
+- Il faut créer par la suite une base de données nommée "game" avec la commande : " CREATE DATABASE game ; "
+
+- Ensuite il faut taper les commandes suivantes, qui permettront de sélectionner la base de données game : " SHOW DATABASES ; " puis " USE game "
+
+- Une fois sélectionnée, on y créée une table baptisée users : "
+		CREATE TABLE users (
+		user_id int(11) NOT NULL,
+		username varchar(32) DEFAULT NULL,
+		email varchar(40) DEFAULT NULL,
+		password varchar(255) DEFAULT NULL,
+		experience varchar(40) DEFAULT NULL,
+		) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+- Ainsi, la table des joueurs sera créée !
+
+**REMARQUE : Les instructions ci-dessus sont à faire une seule fois !
+
+- Maintenant, il faut tout simplement poser le dossier du projet dans le root du serveur (xampp\htdocs en ce qui concerne XAMPP)
+
+- Ouvrir le jeu sur un navigateur depuis le localhost/ProjetWebAhmedHilmi
+
+- Inscrire un joueur avec les informations demandées sous REGISTER
+
+- Puis se connecter avec ce même joueur sous LOGIN
+
+Enjoy it !
